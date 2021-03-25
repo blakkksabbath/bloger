@@ -2,7 +2,6 @@
 layout:     post
 title:      Upgrading Ubuntu to 20.04 LTS
 ---
-<!--more-->
 
 <center> <img src = "https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/optimized/2X/0/0921cb27d5604b464218a64ae88a3f43c7b7371a_2_690x345.png"> </center>
 
