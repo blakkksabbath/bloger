@@ -1,10 +1,6 @@
 ---
 layout: post
 title: Understanding GANs
-date: 2020-07-11
-categories: blog
-permalink: blog/understanding-gans
-tags: [deeplearning]
 ---
 
 <!--more-->
