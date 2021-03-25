@@ -3,8 +3,6 @@ layout: post
 title: Weight Initialization
 ---
 
-<!--more-->
-
 In this article, I am writing some notes about weight initialization. 
 I took these from various sources I am reading regarding this. Links and References at the end of the post! Consider reading them to get a clear understanding!
 
