@@ -3,6 +3,88 @@ layout: default
 title: Home
 ---
 
+<p>
+Welcome to my site & blog! I'm a Computer Science & Statistics student at the
+<b>University of Waterloo</b> interested in <b>machine learning</b> and
+<b>programming languages</b>. I'm currently seeking a machine learning
+internship for 2021 (start date flexible).
+</p>
+
+<p>
+Previously, I did deep learning research on collaborative self-driving at
+<b>Uber ATG</b>, helped improve the neural network optimization algorithm
+library <a href=https://github.com/tensorflow/kfac>K-FAC</a> at <b>Google
+Brain</b>, accelerated BERT inference at <b>NVIDIA</b> <a
+href=https://developer.nvidia.com/tensorrt>TensorRT</a>, and developed
+data-driven models to identify fraud at <b>John Hancock Financial</b>. I've
+also worked as a Research Assistant for <b>Prof. Gautam Kamath</b> in
+differential privacy, <b>Prof. Lin Tan</b> in deep learning-driven software
+analysis, and <b>Prof. Pascal Poupart</b> on neural network parameter learning.
+</p>
+
+<p>
+Follow me on <a href=https://twitter.com/nicvadivelu>twitter</a>, I mostly
+tweet about technical topics! Checkout my <a href=https://nicholasvadivelu.com/resources/> 
+resources page</a> for links to cool blog posts, talks, and other gems.  Feel
+free to reach out through email: <code>nicholas.vadivelu [at] gmail [dot]
+com</code>.
+
+</p>
+
+<br>
+<h2>News</h2>
+  <table style="border-collapse: collapse; border: none; background: none;">
+    <tr style="border: none; background: none; margin: 0; padding: 0;">
+        <td style="border: none; background: none; margin: 0; padding-top: 0; padding-bottom: 0; white-space: nowrap; vertical-align: top;">
+            <h4>Feb 2021</h4>
+        </td>
+        <td style="border: none; background: none; margin: 0; padding-top: 0; padding-bottom: 0; vertical-align: top; text-align: left;">
+            <h4>I'm currently running a course-group based on <a href=https://avehtari.github.io/BDA_course_Aalto/>Bayesian Data Analysis</a> by Aki Vehtari. 
+                &#8239; Join us! 
+                [<a href=https://discord.gg/UfknrYPV target="_blank">discord</a>] 
+                [<a href=https://github.com/n2cholas/dsc-workshops/tree/master/Bayesian_Data_Analysis target="_blank">problem solutions/demos</a>] 
+            </h4>
+        </td> 
+  </tr>
+  </table>
+<br>
+
+<h2>Papers</h2>
+<ul>
+    <li style="padding: 5px 0px;">Learning to Communicate and Correct Pose Errors.
+        <b>Nicholas Vadivelu</b>, Mengye Ren, James Tu, Jingkang Wang, Raquel Urtasun. 
+        <i>Conference on Robot Learning (CoRL),</i> Virtual, 2020.
+        [<a href=https://arxiv.org/abs/2011.05289 target="_blank">arxiv</a>]
+        [<a onclick="toggle('abstract-2011.05289')" target="_blank">abstract</a>]
+        [<a onclick="toggle('corl-video')" target="_blank">video</a>]
+        <div id="abstract-2011.05289" style="display:none">
+            <br><i><small>
+            Learned communication makes multi-agent systems more effective by aggregating distributed information. However, it also exposes individual agents to the threat of erroneous messages they might receive. In this paper, we study the setting proposed in V2VNet, where nearby self-driving vehicles jointly perform object detection and motion forecasting in a cooperative manner. Despite a huge performance boost when the agents solve the task together, the gain is quickly diminished in the presence of pose noise since the communication relies on spatial transformations. Hence, we propose a novel neural reasoning framework that learns to communicate, to estimate potential errors, and finally, to reach a consensus about those errors. Experiments confirm that our proposed framework significantly improves the robustness of multi-agent self-driving perception and motion forecasting systems under realistic and severe localization noise.
+            </small></i><br><br>
+        </div>
+        <div id="corl-video" style="display:none">
+            <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DJVQzqRbIoc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </div>
+    </li>
+    <li style="padding: 5px 0px;">Enabling Fast Differentially Private SGD via Just-in-Time Compilation and Vectorization.
+        Pranav Subramani, <b>Nicholas Vadivelu</b>, Gautam Kamath. 
+        <i>NeuRIPS Privacy-Preserving Machine Learning Workshop,</i> Virtual, 2020.
+        [<a href=https://arxiv.org/abs/2010.09063 target="_blank">arxiv</a>]
+        [<a href=https://github.com/TheSalon/fast-dpsgd target="_blank">code</a>]
+        [<a onclick="toggle('abstract-2010.09063')">abstract</a>]
+        <div id="abstract-2010.09063" style="display:none">
+            <br><i><small>
+                A common pain point in differentially private machine learning is the significant runtime overhead incurred when executing Differentially Private Stochastic Gradient Descent (DPSGD), which may be as large as two orders of magnitude. We thoroughly demonstrate that by exploiting powerful language primitives, including vectorization, just-in-time compilation, and static graph optimization, one can dramatically reduce these overheads, in many cases nearly matching the best non-private running times. These gains are realized in two frameworks: JAX and TensorFlow. JAX provides rich support for these primitives as core features of the language through the XLA compiler. We also rebuild core parts of TensorFlow Privacy, integrating features from TensorFlow 2 as well as XLA compilation, granting significant memory and runtime improvements over the current release version. These approaches allow us to achieve up to 50x speedups in comparison to the best alternatives.
+            </small></i><br><br>
+        </div>
+    </li>
+</ul>
+<br>
+
+
+<h2>Blog Posts</h2>
 <div class="posts">
   <table style="border-collapse: collapse; border: none; background: none;">
   {% for post in paginator.posts %}
@@ -26,6 +108,171 @@ title: Home
   </tr>
   </table>
 </div>
+<br>
+
+
+<h2>Talks</h2>
+<ul>
+    <li style="padding: 5px 0px;"> Clustering for Image Analysis (with Kanika Chopra)
+        <i>WiSTEM High School Student Conference,</i> Virtual, Feb 2021.
+        [<a onclick="toggle('clustering-description')" target="_blank">description</a>]
+        [<a href="https://docs.google.com/presentation/d/1KljHWmAQpbcJPeIm_w-k3u35gZPr3G80nCcUGR17SoI/edit?usp=sharing" target="_blank">slides</a>]
+        [<a href="https://colab.research.google.com/drive/1xX_wZUeGFLF07F-M7uaMcXkLNphjTHhu#scrollTo=ww07pcxZWmzO" target="_blank">notebook</a>]
+        <div id="clustering-description" style="display:none">
+            <br><i><small>
+            Learn about the basics of K-Means clustering as demonstrated on the MNIST dataset. We cover a basic introduction to Data Science & Machine Learning, Python & NumPy, and finally, implement K-Means.
+            </small></i><br><br>
+        </div>
+    </li>
+    <li style="padding: 5px 0px;">Establishing a Productive Machine Learning Workflow
+        <i>Hack the North++,</i> Virtual, Jan 2021.
+        [<a onclick="toggle('productive-ml-video')" target="_blank">video</a>]
+        [<a onclick="toggle('productive-ml-description')" target="_blank">description</a>]
+        [<a href="https://github.com/n2cholas/htn-ml-productivity-workshop" target="_blank">code</a>]
+        [<a href="https://docs.google.com/presentation/d/1xH3lw5i9yq8ezh4FsrKFnzjRcGLNyGXUdQMYbqvZYTg/edit?usp=sharing" target="_blank">slides</a>]
+        [<a href="/assets/documents/ProductiveMachineLearningSyllabus.pdf" target="_blank">syllabus</a>]
+        [<a href="/assets/documents/ProductiveMachineLearningHackpack.pdf" target="_blank">hackpack</a>]
+        <div id="productive-ml-video" style="display:none">
+            <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_qeGoSz9wkI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </div>
+        <div id="productive-ml-description" style="display:none">
+            <br><i><small>
+            Conventional software engineering workflows are sub-optimal for DS & ML. Through this workshop, you'll learn about best practices for experiment configuration, productivity tools, continuous integration for data science, static analysis, and more.
+            </small></i><br><br>
+        </div>
+    </li>
+    <li style="padding: 5px 0px;">Interactive Data Visualization with Altair
+        <i>Hack the North++,</i> Virtual, Jan 2021.
+        [<a onclick="toggle('altair-video')" target="_blank">video</a>]
+        [<a onclick="toggle('altair-description')" target="_blank">description</a>]
+        [<a href="https://colab.research.google.com/drive/1QeIfJWjMVjxvfllBDPxefH5wYNYCmn8J?usp=sharing" target="_blank">notebook</a>]
+        [<a href="/assets/documents/InteractiveDataVisualizationWithAltairSyllabus.pdf" target="_blank">syllabus</a>]
+        [<a href="/assets/documents/InteractiveDataVisualizationWithAltairHackpack.pdf" target="_blank">hackpack</a>]
+        <div id="altair-video" style="display:none">
+            <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/x-iU2UwgVf0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </div>
+        <div id="altair-description" style="display:none">
+            <br><i><small>
+            Learn how to create beautiful, interactive data visualizations using Altair in Python. Through this workshop, we'll explore data using Altair, learn about the grammar of graphics, create simple dashboards, and deploy them for others to use.
+            </small></i><br><br>
+        </div>
+    </li>
+    <li style="padding: 5px 0px;">Overview of Data Science and Data Science Careers.
+        <i>University of Waterloo Data Science Club,</i> Waterloo, Aug 2020.
+        [<a onclick="toggle('ds-video')" target="_blank">video</a>]
+        [<a onclick="toggle('ds-description')" target="_blank">description</a>]
+        [<a href=https://docs.google.com/presentation/d/17lBqf7phIRMys2nLS49Nd--GyOk307IvWP2AQDvHyYE/edit?usp=sharing target="_blank">slides</a>]
+        <div id="ds-video" style="display:none">
+            <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/USMgJOB8wBY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </div>
+        <div id="ds-description" style="display:none">
+            <br><i><small>
+            In this talk, you'll learn about UWaterloo's data science club, data science in general, data science careers, and how to tailor your education for a data science career. This presentation was made for first-year students entering UWaterloo in Fall 2020.
+            </small></i><br><br>
+        </div>
+    </li>
+    <li style="padding: 5px 0px;">What You See is What You Get: Exploiting Visibility for 3D Object Detection.
+        <i>Uber ATG Paper Reading Group,</i> Toronto, July 2020.
+        [<a onclick="toggle('visibility-description')" target="_blank">description</a>]
+        [<a href=https://docs.google.com/presentation/d/1oopMRZ6eG92FrApE908IbyBxLtxEbQ1gOw_l8FEzMSk/edit?usp=sharing target="_blank">slides</a>]
+        <div id="visibility-description" style="display:none">
+            <br><i><small>
+                Summary and critique of the paper What You See is What You Get: Exploiting Visibility for 3D Object Detection by Peiyun Hu, Jason Ziglar, David Held, Deva Ramanan.
+            </small></i><br><br>
+        </div>
+    </li>
+    <li style="padding: 5px 0px;">Introduction to JAX for Machine Learning and More.
+        <i>University of Waterloo Data Science Club,</i> Waterloo, July 2020.
+        [<a onclick="toggle('jax-video')" target="_blank">video</a>]
+        [<a onclick="toggle('jax-description')" target="_blank">description</a>]
+        [<a href=https://github.com/n2cholas/dsc-workshops/blob/master/JAX_Demo.ipynb target="_blank">notebook</a>]
+        <div id="jax-video" style="display:none">
+            <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QkmKfzxbCLQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </div>
+        <div id="jax-description" style="display:none">
+            <br><i><small>
+                JAX is a numeric computing library with a numpy-like interface. It specializes in function transformations such as auto-differentiation, just in time compilation (via XLA), and more. Through this workshop, you'll learn about what JAX is, how to use it, how it is different from other libraries like PyTorch and TensorFlow, why you should consider adding it to your toolkit.
+            </small></i><br><br>
+        </div>
+    </li>
+    <li style="padding: 5px 0px;">Stand-Alone Self-Attention in Vision Models.
+        <i>Uber ATG Paper Reading Group,</i> Toronto, April 2020.
+        [<a onclick="toggle('standalone-sa-description')" target="_blank">description</a>]
+        [<a href=https://docs.google.com/presentation/d/1UwcyY1rvUIWQgQtZ9Iru_L0acg-MsO_CHqHlGlJwTmA/edit?usp=sharing target="_blank">slides</a>]
+        <div id="standalone-sa-description" style="display:none">
+            <br><i><small>
+                Summary and critique of the paper Stand-Alone Self-Attention in Vision Models by Prajit Ramachandran, Niki Parmar, Ashish Vaswani, Irwan Bello, Anselm Levskaya, Jonathon Shlens.
+            </small></i><br><br>
+        </div>
+    </li>
+    <li style="padding: 5px 0px;">Neural Network Optimization Methods
+        <i>Reading Group,</i> Waterloo, December 2019.
+        [<a onclick="toggle('nn-optim-description')" target="_blank">description</a>]
+        [<a href="/assets/documents/Gradient_Based_Neural_Network_Optimization.pdf" target="_blank">slides</a>]
+        <div id="nn-optim-description" style="display:none">
+            <br><i><small>
+                Overview of gradient-based neural network optimization algorithms, including momentum, nesterov, adagrad variants, adam variants, and K-FAC.
+            </small></i><br><br>
+        </div>
+    </li>
+    <li style="padding: 5px 0px;">Introduction to Neural Networks in TensorFlow 2.0.
+        <i>Laurier Developer Student Club,</i> Waterloo, Nov 2019.
+        [<a onclick="toggle('tf2-video')" target="_blank">video</a>]
+        [<a onclick="toggle('tf2-description')" target="_blank">description</a>]
+        [<a href=https://github.com/n2cholas/dsc-workshops/blob/master/Introduction_to_Neural_Networks_with_TensorFlow_2.ipynb target="_blank">notebook</a>]
+        <div id="tf2-video" style="display:none">
+            <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/a_RkE897-Kw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </div>
+        <div id="tf2-description" style="display:none">
+            <br><i><small>
+            This workshop introduces neural networks in TensorFlow 2.0. Topics covered include linear regression, multiclass logistic regression, gradient descent, and neural network. TF 2.0 features such as tf.keras, tf.data, and more are covered. This was co-hosted by the UW Data Science Club and Laurier Developer Student Club.
+            </small></i><br><br>
+        </div>
+    </li>
+    <li style="padding: 5px 0px;">Introduction to Machine Learning with Scikit-learn.
+        <i>Hack the North,</i> Waterloo, Sep 2019.
+        [<a onclick="toggle('sklearn-video')" target="_blank">video</a>]
+        [<a onclick="toggle('sklearn-description')" target="_blank">description</a>]
+        [<a href=https://github.com/n2cholas/dsc-workshops/blob/master/Random_Forests_Workshop_V2.ipynb target="_blank">notebook</a>]
+        [<a href=https://docs.google.com/presentation/d/14e5iw-AswCbli4YUHZI1d9OYu4csM2nyxv84Ytu68QY/edit?usp=sharing target="_blank">slides</a>]
+        <div id="sklearn-video" style="display:none">
+            <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ANdn3CF4bss" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </div>
+        <div id="sklearn-description" style="display:none">
+            <br><i><small>
+            Through this workshop you will learn how to quickly model and understand datasets using scikit-learn. Topics will include a basic introduction to using decisions trees and random forests, understanding feature importance, identifying model weaknesses, explaining your model and more. This workshop will focus on evaluating your model with less emphasis on syntax and mechanics.
+            </small></i><br><br>
+        </div>
+    </li>
+    <li style="padding: 5px 0px;">Introduction to Pandas for Python.
+        <i>Hack the North,</i> Waterloo, Sep 2019.
+        [<a onclick="toggle('pandas-video')" target="_blank">video</a>]
+        [<a onclick="toggle('pandas-description')" target="_blank">description</a>]
+        [<a href=https://github.com/n2cholas/dsc-workshops/blob/master/Introduction_to_Data_Cleaning_with_Pandas.ipynb target="_blank">notebook</a>]
+        <div id="pandas-video" style="display:none">
+            <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mesgiVk8G6s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </div>
+        <div id="pandas-description" style="display:none">
+            <br><i><small>
+            Through this workshop, you will learn how to use Pandas to explore and “wrangle” datasets. Topics will include an introduction to Jupyer Notebooks/Colab, data cleaning with pandas, feature engineering with pandas, basic visualization and more. This workshop will focus on actual coding.
+            </small></i><br><br>
+        </div>
+    </li>
+</ul>
 
 <script> 
 function toggle(id) {
