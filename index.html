@@ -3,7 +3,6 @@ layout: default
 title: Home
 ---
 
-<h2>Blog Posts</h2>
 <div class="posts">
   <table style="border-collapse: collapse; border: none; background: none;">
   {% for post in paginator.posts %}
@@ -27,3 +26,14 @@ title: Home
   </tr>
   </table>
 </div>
+
+<script> 
+function toggle(id) {
+    var x = document.getElementById(id);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
