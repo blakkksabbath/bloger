@@ -3,8 +3,6 @@ layout: post
 title: Understanding GANs
 ---
 
-<!--more-->
-
 > When you create something out of nothing, it is the most thrilling thing  — Frankie Knuckles, American DJ
 
 
