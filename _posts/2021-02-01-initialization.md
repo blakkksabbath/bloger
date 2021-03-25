@@ -1,9 +1,6 @@
 ---
 layout: post
 title: Weight Initialization
-categories: blog
-date: 2021-02-01
-tags: [notes, deeplearning]
 ---
 
 <!--more-->
